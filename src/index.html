@@ -3,9 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 </head>
+
 <body>
+
+  <header>
+    <h1>Bienvenido a <em>Enkrýptein</em></h1>
+  </header>
+
+  <section id="encode">
+  <div>
+      <textarea id="your-message" type=text cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea>
+      <button id= "btn-cifrar">CIFRAR</button>
+  </div>
+
+  <div>
+      <p>Tu mensaje cifrado es:</p>
+      <textarea id="encrypted-text" type=text cols="50" rows="10"></textarea>
+  </div>
+  </section>
+  
+  <section id="decode">
+    <div>
+        <p>¿Qué quieres decifrar?:</p>
+        <textarea id="decodedText" type=text cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea>
+        <button id="btn-decifrar">DECIFRAR</button>
+    </div>
+  
+    <div>
+        <p>Tu mensaje decifrado es:</p>
+        <textarea id="mensajeCifrado" type=text type=text cols="50" rows="10" readonly></textarea>
+    </div>
+  </section>
 
   <div id="root"></div>
 
