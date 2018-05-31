@@ -30,6 +30,10 @@ p {
     color: black;
 }
 
+#numb {
+    width: 45px;
+}
+
 #encode {
     color: white;
     background-color: rgba(235, 235, 130, 0.733);
@@ -40,7 +44,3 @@ p {
     height: 600px;
 }
 
-/*div {
-    position: absolute;
-    left: 200px;
-}*/

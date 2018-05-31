@@ -4,26 +4,35 @@ window.onload = () => {
 const btnCifrar = document.getElementById("btnCifrar");
 const btnDecifrar = document.getElementById("btnDecifrar");
 
-//Evento click
-btnCifrar.addEventListener('click', function() {
-  let cipherText = document.getElementById("encodeText").value;
-  console.log(cipherText);
+//Evento click CIFRAR
+
+btnCifrar.addEventListener('click', () => {
+  let textToEncode = document.getElementById("messageOne").value.toUpperCase();
+  console.log(textToEncode);
+
+  let numbToMove = document.getElementById("numb").value;
+  console.log(numbToMove);
+
+  let encodedText =  window.cipher.encode(textToEncode, numbToMove);
+  
+  document.getElementById("messageTwo").value = encodedText;
+  
+});
+
+//Evento Click DECIFRAR
+
+btnDecifrar.addEventListener('click', () => {
+
+  let textToDecode = document.getElementById("messageOne").value.toUpperCase();
+  console.log(textToDecode);
 
   let numbToMove = document.getElementById("numb").value;
   console.log(numbToMove);
   
-  let decodeText = document.getElementById("decodeText").value;
-
-  //window.cipher.encode(cipherText, numbToMove);
-
-  decodeText = window.cipher.encode(cipherText, numbToMove);
-
+  let decodedText = window.cipher.decode(textToDecode, numbToMove);
+  
+  document.getElementById("messageTwo").value = decodedText;
 
 });
-btnDecifrar.addEventListener('Click', function() {
-
-    
-});
-
 
 }
