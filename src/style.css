@@ -1,0 +1,46 @@
+header {
+    height: 250px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    background-image: url(img/candado.jpg);
+    background-size:100% 100%;    
+}
+
+h1 {
+    color: rgb(245, 241, 16);
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+h2 {
+    color: red;
+}
+
+body {
+    font-family: 'Sunflower', sans-serif;
+    background-image: url(img/fondo_verde.jpg);
+    background-size:100% 100%;
+}
+
+p {
+    color: black;
+}
+
+#encode {
+    color: white;
+    background-color: rgba(235, 235, 130, 0.733);
+    border: solid black;
+    position: relative;
+    left: 400px;
+    width: 800px;
+    height: 600px;
+}
+
+/*div {
+    position: absolute;
+    left: 200px;
+}*/

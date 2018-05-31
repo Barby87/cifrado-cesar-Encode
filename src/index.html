@@ -3,43 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 </head>
 
 <body>
 
   <header>
-    <h1>Bienvenido a <em>Enkrýptein</em></h1>
+    <h1><strong>Bienvenid@ a Encode</strong></h1>
   </header>
 
   <section id="encode">
   <div>
-      <textarea id="your-message" type=text cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea>
-      <button id= "btn-cifrar">CIFRAR</button>
+      <h2><strong>¿Qué quieres cifrar?</h2>
+      <textarea id="encodeText" type="text" cols="50" rows="10" placeholder="Ingresa tu mensaje secreto aquí"></textarea>
   </div>
+
+  <div>    
+    <p>Ingresa la cantidad de letras a desplazar:</p>
+    <input type="number" id="numb"></input>
+    <button id="btnCifrar">CIFRAR</button>
+    <button id="btnDecifrar">DECIFRAR</button>
+  </div>  
 
   <div>
-      <p>Tu mensaje cifrado es:</p>
-      <textarea id="encrypted-text" type=text cols="50" rows="10"></textarea>
+      <h2><strong>Tu mensaje cifrado es:</strong></h2>
+      <textarea id="decodeText" type=text cols="50" rows="10" readonly></textarea>
   </div>
   </section>
   
-  <section id="decode">
-    <div>
-        <p>¿Qué quieres decifrar?:</p>
-        <textarea id="decodedText" type=text cols="50" rows="10" placeholder="Ingresa tu mensaje aquí"></textarea>
-        <button id="btn-decifrar">DECIFRAR</button>
-    </div>
-  
-    <div>
-        <p>Tu mensaje decifrado es:</p>
-        <textarea id="mensajeCifrado" type=text type=text cols="50" rows="10" readonly></textarea>
-    </div>
-  </section>
-
-  <div id="root"></div>
-
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
