@@ -15,20 +15,26 @@
 
   <section id="encode">
     <div>
-      <h2><strong>¿Qué quieres cifrar?</h2>
-      <textarea id="messageOne" type="text" cols="50" rows="10" placeholder="Ingresa tu mensaje secreto aquí"></textarea>
+      <h2><strong>¿Qué quieres cifrar?</strong></h2>
+    </div> 
+
+    <div>
+        <textarea id="messageOne" type="text" cols="50" rows="10" placeholder="Ingresa tu mensaje secreto aquí"></textarea>
     </div>
 
-  <div>    
-    <p>Ingresa la cantidad de letras a desplazar:</p>
-    <input type="number" id="numb"></input>
+    <div>    
+    <h3><strong>Ingresa la cantidad de letras a desplazar:</strong></h3>
+    <input type="number" id="numb" min=1 max=40></input>
     <button id="btnCifrar">CIFRAR</button>
     <button id="btnDecifrar">DECIFRAR</button>
-  </div>
+    </div>
 
   <div>
       <h2><strong>Tu mensaje cifrado es:</strong></h2>
-      <textarea id="messageTwo" type=text cols="50" rows="10" readonly></textarea>
+  </div>
+
+  <div>
+    <textarea id="messageTwo" type=text cols="50" rows="10" readonly></textarea>
   </div>
   </section>
   

@@ -5,7 +5,7 @@ header {
     text-align: center;
     position: relative;
     background-image: url(img/candado.jpg);
-    background-size:100% 100%;    
+    background-size: 100% 100%;    
 }
 
 h1 {
@@ -13,34 +13,49 @@ h1 {
     font-size: 60px;
     position: absolute;
     top: 40%;
-    left: 40%;
-}
-
-h2 {
-    color: red;
+    left: 35%;
 }
 
 body {
     font-family: 'Sunflower', sans-serif;
     background-image: url(img/fondo_verde.jpg);
-    background-size:100% 100%;
-}
-
-p {
-    color: black;
+    background-size: 100% 100%;
 }
 
 #numb {
     width: 45px;
+    height: 30px;
+    border: 1px solid blue;
+    font-weight: bold;
 }
 
 #encode {
-    color: white;
-    background-color: rgba(235, 235, 130, 0.733);
-    border: solid black;
+    border-radius: 40px;
+    background-color: rgba(135, 235, 78, 0.651);
+    text-align: center;
     position: relative;
     left: 400px;
     width: 800px;
-    height: 600px;
+    height: 700px;
+}
+
+#btnCifrar {
+    font-size: 20px;
+    color: white;
+    background: #080cee;
+    border: 1px solid black;
+    width: 120px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+#btnDecifrar {
+    font-size:20px;
+    color:white;
+    background:#080cee;
+    border: 1px solid black;
+    width:120px;
+    height:30px;
+    border-radius: 6px;
 }
 
